@@ -23,7 +23,18 @@ playButton.addEventListener("click",
 
             //aggioungo il div.box in div.container
             addContainer.append(addBox)
+
+            //creo evento cambio colore al click di div.box
+            addBox.addEventListener("click",
+                function () {
+                    //aggiungo/tolgo la classe clicked
+                    addBox.classList.toggle("clicked")
+                    //mostro in console il numero della casella cliccata
+                    console.log(i);
+                }
+                
+            );
         }
        
     }
-)
+);
