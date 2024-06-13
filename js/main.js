@@ -13,7 +13,7 @@ playButton.addEventListener("click",
         const addContainer = createElementWClass("div", "container");
 
         //lo posiziono in pagina
-        document.querySelector("body").append(addContainer);
+        document.querySelector("main").append(addContainer);
 
         //creo ciclo per creare 100 box dentro div.container al click
         for (let i = 1; i <= 100; i++) {
