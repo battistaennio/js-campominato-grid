@@ -3,3 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --misura-container: 80vh;
+}
+
+body{
+    background-color: #011627;
+}
+
+.container{
+    margin: 4.5% auto;
+    height: var(--misura-container);
+    width: var(--misura-container);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box{
+    height: calc(100% / 10);
+    width: calc(100% / 10);
+    border: 1px solid white;
+}
