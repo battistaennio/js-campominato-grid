@@ -9,6 +9,11 @@ const playButton = document.querySelector("button");
 //creo evento su click
 playButton.addEventListener("click",
     function (){
-        console.log("funziono");
+        //creo il div.container
+        const addContainer = createElementWClass("div", "container");
+        
+        //lo posiziono in pagina
+        document.querySelector("body").append(addContainer)
+       
     }
 )
