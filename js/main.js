@@ -9,6 +9,10 @@ const playButton = document.querySelector("button");
 //creo evento su click
 playButton.addEventListener("click",
     function (){
+
+        //faccio sparire il pulsante
+        playButton.classList.add("vanish")
+
         //creo il div.container
         const addContainer = createElementWClass("div", "container");
 
@@ -21,6 +25,9 @@ playButton.addEventListener("click",
             //creo il div.box
             const addBox = createElementWClass("div", "box");
 
+            //scrivo all'interno di div.box il numero della box
+            addBox.append(i);
+
             //aggioungo il div.box in div.container
             addContainer.append(addBox)
 
@@ -29,6 +36,7 @@ playButton.addEventListener("click",
                 function () {
                     //aggiungo/tolgo la classe clicked
                     addBox.classList.toggle("clicked")
+
                     //mostro in console il numero della casella cliccata
                     console.log(i);
                 }
