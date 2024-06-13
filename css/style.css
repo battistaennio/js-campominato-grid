@@ -12,6 +12,8 @@ body{
     background-color: #011627;
 }
 
+/* bottone gioca */
+
 #bttn-play_container{
     margin: 1% 0;
     text-align: center;
@@ -30,12 +32,12 @@ button{
 }
 
 button:hover{
-    background-color: #002b4fa5;
     color: rgb(168, 81, 255);
 }
 
+/* container delle box */
 .container{
-    margin: 4.5% auto;
+    margin: 2% auto;
     height: var(--misura-container);
     width: var(--misura-container);
     display: flex;
@@ -43,8 +45,13 @@ button:hover{
     justify-content: center;
 }
 
+/* box */
 .box{
     height: calc(100% / 10);
     width: calc(100% / 10);
     border: 1px solid white;
+}
+
+.box.clicked{
+    background-color: #7fffd4;
 }
